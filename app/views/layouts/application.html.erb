@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <title>Ball shoes</title>
+</head>
+
+<body>
+  <%= render 'layouts/navbar' %>
+  
+  <section id="wrapper" class='clearfix <%= controller_name + '_' + action_name %>'>
+    
+    <%= yield %>
+  </section>
+
+  <%= render 'layouts/footer' %>
+</body>
+
+</html>

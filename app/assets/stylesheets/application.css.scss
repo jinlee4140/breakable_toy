@@ -1,0 +1,80 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  
+    background-color: #cccccc; 
+}
+.row {
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714302062988px;
+
+    margin-top: 50px;
+    margin-bottom: 2px;
+}
+
+.button {
+  background-color: black;
+}
+
+h1 {
+    font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+      font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#profile {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.5em;
+}
+
+.top-bar-section {
+  color: blue;
+}
+
+#content3 {
+background-image: url("bgimage1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.hometitle {
+  font-size: 50px;
+}
+
+
+.row1{
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.row2{
+  margin-top: 2px;
+}
+
+.section {
+  font-size: 20px;  
+}

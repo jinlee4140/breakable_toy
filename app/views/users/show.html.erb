@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="medium-12 medium-centered columns">
+    <h2> <%= @user.username %>'s Profile </h2>
+  </div>
+</div>
+
+  <div class="medium-6 medium-centered columns float left">
+    <ul style="list-style-type: none" id="profile">
+      <li> Username: <%= @user.username %> </li>
+      <li> E-mail: <%= @user.email %> </li>
+    </ul>
+      <% if current_user == @user %>
+        <%= link_to "Edit My Profile", edit_user_registration_path, class: "button round" %>
+      <% end %>
+      <% if current_user && current_user.admin %>
+        <%= link_to "Admin Access", users_path, class: "button alert radius" %>
+      <% end %>
+  </div>
+</div>

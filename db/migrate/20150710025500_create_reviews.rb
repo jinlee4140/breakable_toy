@@ -1,0 +1,12 @@
+class CreateReviews < ActiveRecord::Migration
+  def change
+    create_table :reviews do |t|
+      t.belongs_to :shoe, index: true
+
+      t.string :comment, presence: true
+      t.integer :rating
+
+      t.timestamps null: false
+    end
+  end
+end
