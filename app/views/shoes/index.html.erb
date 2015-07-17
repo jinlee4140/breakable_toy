@@ -1,18 +1,35 @@
-<div class="row">
-  <div class="medium-12 medium-centered columns">
-    <h1> List of basketball shoes</h1>
-  </div>
+<div class="search-query">
+<%= form_tag shoes_path, method: "get", class: "search-form" do %>
+  <label class="control-label sr-only" for="inputSuccess5">
+    Hidden label
+  </label>
+  <%= text_field_tag(:search, nil, class: "form-control input-md", placeholder: "what basketball shoes are you searching for?", maxlength: "300") %>
 </div>
+<% end %>
 
 
-<div class="row">
-  <div class="medium-12 medium-centered columns">
-    <ul>
-      <% @shoes.each do |shoe| %>
-        <li><%= link_to shoe.name, shoe %></li>
-      <% end %>
-    </ul>
-    <%= paginate @shoes %>
+<div class="well">
+  <div class="row">
+    <div class="medium-6 text-center columns"> 
+    <%=link_to 'View all of the basketball shoes', shoes_path %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="medium-12 text-center columns">
+      <h1> List of basketball shoes</h1>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="medium-12 text-center columns">
+
+        <% @shoes.each do |shoe| %>
+          <%= link_to shoe.name, shoe %><br>
+        <% end %>
+      <%= paginate @shoes %>
+    </div>
   </div>
 </div>
 

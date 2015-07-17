@@ -52,4 +52,8 @@ gem 'factory_girl', group: [:development, :test]
 gem 'valid_attribute', group: [:development, :test]
 gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
+gem "paperclip", "~> 4.3"
 # gem 'foundation-rails'
+
+gem 'pry'
+gem "font-awesome-rails"

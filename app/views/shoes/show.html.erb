@@ -1,11 +1,63 @@
 <div class="row">
-  <div class="medium-12 medium-centered columns">
+  <div class="medium-12 medium-centered text-center columns">
     <h1> Name: <%= @shoes.name %> </h1>
     <h3> Price: $<%= @shoes.price %> </h3>
     <h3> Color: <%= @shoes.color %> </h3>
     <h3> Brand: <%= @shoes.brand %> </h3>
   </div>
+
+
+
+  <div class="medium-6 columns float-right" style="margin-top: 10px">
+    <% if @shoes.image? %>
+      <%= image_tag @shoes.image.url(:medium) %>
+    <% end %>
+  </div>
 </div>
 
 
 
+<div class="row">
+  <div class="medium-12 medium-centered columns text-center">
+    Reviews:
+    <% @reviews.each do |review| %>
+      <hr>
+      <div class="review">
+    
+          <div class="medium-8 columns text-center float left">
+          
+            <%= review.user.username %>
+    
+
+          </div>
+
+        
+        <div class="medium-8 medium-centered columns float left text-center">
+          Rating: <%= review.rating %>/10
+          <br>
+          <%= review.comment %>
+          <br>
+          <div>
+            <% if user_signed_in? %>
+              <% if current_user == review.user %>
+                <%= link_to "Edit Review", edit_review_path(review), class: "btn btn-info" %>
+              <% end %>
+              <% if current_user.admin || current_user == review.user %>
+                <%= link_to "Delete Review", review_path(review), method: :delete, class: "btn btn-danger" %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <% if user_signed_in? %>
+      <%= link_to "New Review", new_shoe_review_path(@shoes), id: "new_review", class: "btn btn-success" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="medium-12 medium-centered columns" id="species_paginate">
+    <%= paginate @reviews %>
+  </div>
+</div>

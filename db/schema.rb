@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150710150120) do
+ActiveRecord::Schema.define(version: 20150716182214) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "reviews", force: :cascade do |t|
     t.integer  "shoe_id"
+    t.integer  "user_id"
     t.string   "comment"
     t.integer  "rating"
     t.datetime "created_at", null: false
@@ -25,16 +26,22 @@ ActiveRecord::Schema.define(version: 20150710150120) do
   end
 
   add_index "reviews", ["shoe_id"], name: "index_reviews_on_shoe_id", using: :btree
+  add_index "reviews", ["user_id"], name: "index_reviews_on_user_id", using: :btree
 
   create_table "shoes", force: :cascade do |t|
     t.integer  "user_id"
-    t.string   "name",          null: false
-    t.integer  "price",         null: false
-    t.string   "color",         null: false
-    t.string   "brand",         null: false
+    t.string   "name",               null: false
+    t.integer  "price",              null: false
+    t.string   "color",              null: false
+    t.string   "brand",              null: false
     t.string   "signatureshoe"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "youtube_url"
   end
 
   add_index "shoes", ["user_id"], name: "index_shoes_on_user_id", using: :btree
@@ -54,6 +61,10 @@ ActiveRecord::Schema.define(version: 20150710150120) do
     t.datetime "updated_at",                             null: false
     t.string   "username",                               null: false
     t.boolean  "admin",                  default: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

@@ -1,0 +1,35 @@
+<div id="form_container" class="row">
+  <div class="medium-12 medium-centered columns">
+    <h3>Edit Review for <%= @shoes.name  %> </h3>
+
+    <% if user_signed_in? %>
+      <%= form_for @review do |f| %>
+
+        <div id="form_errors">
+          <% if @review.errors.any? %>
+            <h4>
+              <%= pluralize(@review.errors.count, "error")%>
+              Error(s) detected:
+            </h4>
+            <ul>
+              <% @review.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          <%end%>
+        </div>
+
+        <%= f.label :comment %>
+        <%= f.text_area :comment, placeholder: "Comment"%>
+
+        <%= f.label :rating%>
+        <%= f.select :rating, options_for_select(10.downto(1))%>
+
+        <%= f.submit "Update Review", class: "button radius small edit_user_button submit_form_button"%>
+
+      <%end%>
+    <% end %>
+
+    <%= link_to "Back to Shoes", shoes_path(@hoes), class: "btn btn-info edit_form_button"%>
+  </div>
+</div>

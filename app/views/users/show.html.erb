@@ -17,3 +17,10 @@
       <% end %>
   </div>
 </div>
+
+<div class="row">
+  <div class="medium-6 medium-centered columns float right">
+    <% if @user.avatar? %>
+      <%= image_tag @user.avatar.url(:medium) %>
+    <% end %>
+  </div>
