@@ -25,7 +25,7 @@ class ReviewsController < ApplicationController
   def edit
     @review = Review.find(params[:id])
     @shoes = @review.shoes
-    binding.pry
+
   end
 
   def update

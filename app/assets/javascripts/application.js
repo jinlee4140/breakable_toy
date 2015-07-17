@@ -47,30 +47,3 @@
 // $('h3').mouseenter(function(){
 // $('h3').hide();
 // }); });
-$(function(){ $(document).foundation(); });
-
-src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
-
-$(document).ready(function(){
-    $("#flip").click(function(){
-        $("#panel").slideToggle("slow");
-    });
-});
-
-$(document).ready(function(){
-  $("#backpack_button").click(function(){
-    $("#backpack").show();
-    $("#tent").hide();
-    $("#sleepingbag").hide();
-  });
-  $("#tent_button").click(function(){
-    $("#backpack").hide();
-    $("#tent").show();
-    $("#sleepingbag").hide();;
-  });
-  $("#sleepingbag_button").click(function(){
-    $("#backpack").hide();
-    $("#tent").hide();
-    $("#sleepingbag").show();;
-  });
-});
