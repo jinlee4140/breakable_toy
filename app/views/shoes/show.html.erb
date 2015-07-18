@@ -30,12 +30,39 @@
       <div class="panel-heading">
         <h3 class="panel-title"> Theme Author </h3>
       </div>
-        <div class="panel-body text-center">
-          <img src="img/swoopthemes.jpg" alt="Swoop Themes" class="img-circle">
-            <h4> Swoop Themes </h4>
-          </img>
-        </div>
+      <div class="panel-body text-center">
+        <img src="img/swoopthemes.jpg" alt="Swoop Themes" class="img-circle">
+          <h4> Swoop Themes </h4>
+        </img>
       </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"> Shoes Attributes </h3>
+      </div>
+      <table class="table table-bordered table-stripped">
+        <tbody>
+          <tr>
+            <td> Price </td>
+            <td> <%= @shoes.price %> </td>
+          </tr>
+          <tr>
+            <td> Color </td>
+            <td> <%= @shoes.color %> </td>
+          </tr>
+          <tr>
+            <td> Brand </td>
+            <td> <%= @shoes.brand %> </td>
+          </tr>
+          <tr>
+            <td> Tags </td>
+            <td> Portfolio, responsive, clean, showcase, single page 
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
   </div>
 </div>
