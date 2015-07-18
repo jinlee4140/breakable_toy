@@ -1,19 +1,47 @@
-<div class="row">
-  <div class="medium-12 medium-centered text-center columns">
-    <h1> Name: <%= @shoes.name %> </h1>
-    <h3> Price: $<%= @shoes.price %> </h3>
-    <h3> Color: <%= @shoes.color %> </h3>
-    <h3> Brand: <%= @shoes.brand %> </h3>
+<div class="container">
+  <div class="page-header">
+    <h1> <%= @shoes.name %> </h1> 
   </div>
+  <div class="col-sm-8">
+    <div class="thumbnail">
+      <%= image_tag "steph3.jpg" %>
+      <div class="caption text-center">
+        <a href="#" class="btn btn-primary" role="button">Live Preview
+        </a>
+      </div>
+    </div>
+    <p> Jiggy is a beautiful and fully responsive one page HTML template. It is intended for websites that are showcasing a creative portfolio. It includes sections for portfolio items, testimonials, about, and contact.</p>
+    <h3> Features </h2>
+    <li> Bootstrap 3 </li>
+    <li> Fully responsive </li>
+    <li> One page scroll design </li>
+    <li> HTML5 and CSS3 </li>
+    <li> Font Awesome Icons </li>
+    <li> Google Web Fonts </li>
+  </div>
+  <div class="col-sm-4">
+    <div class="thumbnail bg-grey text-center">
+      <h2> Retail Price: </h2>
+      <h3> $<%= @shoes.price %> </h3>
+      
+      <a href="#" class="btn btn-success" role="button"> Buy Now </a>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"> Theme Author </h3>
+      </div>
+        <div class="panel-body text-center">
+          <img src="img/swoopthemes.jpg" alt="Swoop Themes" class="img-circle">
+            <h4> Swoop Themes </h4>
+          </img>
+        </div>
+      </div>
 
-
-
-  <div class="medium-6 columns float-right" style="margin-top: 10px">
-    <% if @shoes.image? %>
-      <%= image_tag @shoes.image.url(:medium) %>
-    <% end %>
   </div>
 </div>
+
+
+
 
 
 
