@@ -57,3 +57,5 @@ gem "paperclip", "~> 4.3"
 
 gem 'pry'
 gem "font-awesome-rails"
+gem "chartkick"
+gem 'groupdate'

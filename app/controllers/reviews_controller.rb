@@ -12,7 +12,7 @@ class ReviewsController < ApplicationController
     @review.user = current_user
     # binding.pry
     if @review.save
-      redirect_to shoes_path(@shoes)
+      redirect_to shoe_path(@shoes.id)
       flash[:notice] = "Review added"
       # if @shoes.user
       #   UserMailer.review_email(@review).deliver_now
@@ -24,16 +24,16 @@ class ReviewsController < ApplicationController
 
   def edit
     @review = Review.find(params[:id])
-    @shoes = @review.shoes
+    @shoes = @review.shoe_id
 
   end
 
   def update
     @review = Review.find(params[:id])
-    @shoes = @review.shoes
+    @shoes = @review.shoe_id
 
     if @review.update(review_params)
-      redirect_to shoes_path(@shoes)
+      redirect_to shoe_path(@review.shoe_id)
       flash[:notice] = "Review updated"
     else
       render :edit
@@ -42,14 +42,14 @@ class ReviewsController < ApplicationController
 
   def destroy
     @review = Review.find(params[:id])
-    @shoes = @review.shoe
+    @shoes = @review.shoe_id
 
     if @review.destroy
       # UserMailer.review_delete(@review).deliver_now
       flash[:notice] = "Review obliterated!"
     end
 
-    redirect_to shoe_path(@shoes)
+    redirect_to shoe_path(@review.shoe_id)
   end
 
   protected

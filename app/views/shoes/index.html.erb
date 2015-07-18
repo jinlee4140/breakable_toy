@@ -8,6 +8,8 @@
 <% end %>
 
 
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<%= pie_chart Shoe.group(:brand).count %>
 <div class="well">
   <div class="row">
     <div class="medium-6 text-center columns"> 
