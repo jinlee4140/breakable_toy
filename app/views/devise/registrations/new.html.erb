@@ -1,7 +1,4 @@
-<section id="signup">
-  <div class="container">
-    <div class="row margin-40">
-      <div class="col-sm-6 col-sm-offset-3 text-center signup">
+<div class="well text-center">
 
         <h2>Sign up</h2>
 
@@ -30,9 +27,10 @@
             <%= f.label :password_confirmation %><br />
             <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password confirmation" %>
           </div>
-
-          <div class="field">
+          <div id="photo_attachment_container">
+            <div class="wrapper">
             <%= f.file_field :avatar %>
+            </div>
           </div>
 
           <div class="actions">
@@ -41,7 +39,4 @@
         <% end %>
 
         <%= render "devise/shared/links" %>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
