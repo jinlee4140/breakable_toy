@@ -9,7 +9,7 @@ class ShoesController < ApplicationController
     if params[:search].present?
       @shoes = Shoe.search(params[:search]).page(params[:page]).per(10)
     else
-      @shoes = Shoe.all.order(:name).page(params[:page]).per(10)
+      @shoes = Shoe.all.order(:name).page(params[:page]).per(15)
     end
   end
 

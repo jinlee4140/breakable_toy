@@ -59,3 +59,4 @@ gem 'pry'
 gem "font-awesome-rails"
 gem "chartkick"
 gem 'groupdate'
+gem 'omniauth-facebook'

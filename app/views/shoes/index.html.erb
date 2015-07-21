@@ -1,27 +1,17 @@
-<div class="search-query">
-<%= form_tag shoes_path, method: "get", class: "search-form" do %>
-  <label class="control-label sr-only" for="inputSuccess5">
-    Hidden label
-  </label>
-  <%= text_field_tag(:search, nil, class: "form-control input-md", placeholder: "what basketball shoes are you searching for?", maxlength: "300") %>
-</div>
-<% end %>
 
 
-<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
-<%= pie_chart Shoe.group(:brand).count %>
-<div class="well">
-  <div class="row">
+
+
+  <div class="well">
     <div class="medium-6 text-center columns"> 
-    <%=link_to 'View all of the basketball shoes', shoes_path %>
+    <%=link_to 'Go back to root page', root_path %>
     </div>
-  </div>
 
-  <div class="row">
+ 
     <div class="medium-12 text-center columns">
       <h1> List of basketball shoes</h1>
     </div>
-  </div>
+
 
 
   <div class="row">
@@ -33,5 +23,10 @@
       <%= paginate @shoes %>
     </div>
   </div>
-</div>
+  <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+<%= pie_chart Shoe.group(:brand).count, library: {backgroundColor: "#cccccc"} %> 
+ </div>
+
+
+
 
