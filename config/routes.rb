@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   resources :shoes do
     resources :reviews, only: [:index, :new, :create]
-    resources :qanda, only: [:index, :new, :create]
+    resources :shoestores, only: [:index, :show, :new, :create]
 
   end
 

@@ -7,12 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 40.times do
-     User.create(
-        username: Faker::Internet.user_name,
-        email: Faker::Internet.email,
-        password: Faker::Internet.password
-      ) 
+  User.create(
+    username: Faker::Internet.user_name,
+    email: Faker::Internet.email,
+    password: Faker::Internet.password
+  ) 
 end 
+
+
 shoes = [
   ["Under Armour Men's Stephen Curry Low Basketball Shoes", "109.99", "Navy / Yellow", "Under Armour", "app/assets/images/seed1.jpg", "Stay flexible and quick on your feet in the new low-top version of the Under Armour® Curry Charged Foam basketball shoes. Thanks to the low-cut ankle design, the Curry 1 allows for a full range of motion. A Charged Foam midsole adapts with each move - soft and flexible during slow motion, but firm and responsive during fast movements. An ideal game shoe for summer games, the Curry low keeps you cool and comfortable when the action heats up."],
   ["Under Armour Men's Stephen Curry Low Basketball Shoes", "109.99", "Turquoise / Black", "Under Armour", "app/assets/images/seed2.jpg", "Stay flexible and quick on your feet in the new low-top version of the Under Armour® Curry Charged Foam basketball shoes. Thanks to the low-cut ankle design, the Curry 1 allows for a full range of motion. A Charged Foam midsole adapts with each move - soft and flexible during slow motion, but firm and responsive during fast movements. An ideal game shoe for summer games, the Curry low keeps you cool and comfortable when the action heats up."],
@@ -51,3 +53,30 @@ shoes.each do |array|
   Shoe.create(name: array[0], price: array[1], color: array[2], brand: array[3], image: File.new(array[4]), description: array[5])
 end
 
+stores = [
+  "Foot Locker", 
+  "Amazon",
+  "Nike",
+  "Adidas",
+  "Puma",
+  "Cole Haan",
+  "Reebok",
+  "Under Armour"
+]
+
+stores.each do |store|
+  Store.create!(
+    store_name: store
+  )
+end
+
+
+
+
+50.times do
+  ShoeStore.create!(
+    shoe: Shoe.all.sample,
+    store: Store.all.sample,
+    url: "http://www.danelsonrosa.com"
+  )
+end

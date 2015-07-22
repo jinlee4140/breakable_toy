@@ -2,17 +2,17 @@
 
 <div class="container">
   <div class="page-header">
-    <h1> <%= @shoes.name %> </h1> 
+    <h1> <%= @shoe.name %> </h1> 
   </div>
   <div class="col-sm-8">
     <div class="thumbnail">
-      <%= image_tag @shoes.image %>
+      <%= image_tag @shoe.image %>
       <div class="caption text-center">
         <a href="#" class="btn btn-primary" role="button">Live Preview
         </a>
       </div>
     </div>
-    <p> <%= @shoes.description %> </p>
+    <p> <%= @shoe.description %> </p>
     <h3> Features </h2>
     <li> Bootstrap 3 </li>
     <li> Fully responsive </li>
@@ -24,9 +24,13 @@
   <div class="col-sm-4">
     <div class="thumbnail bg-grey text-center">
       <h2> Retail Price: </h2>
-      <h3> $<%= @shoes.price %> </h3>
-      
-      <a href="#" class="btn btn-success" role="button"> Buy Now </a>
+      <h3> $<%= @shoe.price %> </h3>
+      <% @shoe.shoe_stores.each do |shoe_store| %>
+        <%= shoe_store.store.store_name %>
+        <%= link_to "Buy Now", shoe_store.url %>
+        <br>
+      <% end %>
+    <!--   <a href="#" class="btn btn-success" role="button"> Buy Now </a> -->
     </div>
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -42,21 +46,21 @@
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"> Shoes Attributes </h3>
+        <h3 class="panel-title"> shoe Attributes </h3>
       </div>
       <table class="table table-bordered table-stripped">
         <tbody>
           <tr>
             <td> Price </td>
-            <td> <%= @shoes.price %> </td>
+            <td> <%= @shoe.price %> </td>
           </tr>
           <tr>
             <td> Color </td>
-            <td> <%= @shoes.color %> </td>
+            <td> <%= @shoe.color %> </td>
           </tr>
           <tr>
             <td> Brand </td>
-            <td> <%= @shoes.brand %> </td>
+            <td> <%= @shoe.brand %> </td>
           </tr>
           <tr>
             <td> Tags </td>
@@ -109,7 +113,7 @@
       </div>
     <% end %>
     <% if user_signed_in? %>
-      <%= link_to "New Review", new_shoe_review_path(@shoes), id: "new_review", class: "btn btn-success" %>
+      <%= link_to "New Review", new_shoe_review_path(@shoe), id: "new_review", class: "btn btn-success" %>
     <% end %>
   </div>
 </div>

@@ -1,7 +1,7 @@
 class Review < ActiveRecord::Base
 
   belongs_to :user
-  belongs_to :shoes
+  belongs_to :shoe
 
 
   validates :user_id, presence: true

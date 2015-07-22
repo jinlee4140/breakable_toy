@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150720003435) do
+ActiveRecord::Schema.define(version: 20150721165420) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 20150720003435) do
 
   add_index "reviews", ["shoe_id"], name: "index_reviews_on_shoe_id", using: :btree
   add_index "reviews", ["user_id"], name: "index_reviews_on_user_id", using: :btree
+
+  create_table "shoe_stores", force: :cascade do |t|
+    t.integer  "shoe_id"
+    t.integer  "store_id"
+    t.string   "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "shoes", force: :cascade do |t|
     t.integer  "user_id"
@@ -46,6 +54,15 @@ ActiveRecord::Schema.define(version: 20150720003435) do
   end
 
   add_index "shoes", ["user_id"], name: "index_shoes_on_user_id", using: :btree
+
+  create_table "stores", force: :cascade do |t|
+    t.string   "store_name"
+    t.string   "product_name"
+    t.integer  "retail_price"
+    t.string   "url"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false

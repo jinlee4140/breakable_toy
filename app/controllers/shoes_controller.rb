@@ -14,8 +14,10 @@ class ShoesController < ApplicationController
   end
 
   def show
-    @shoes = Shoe.find(params[:id])
-    @reviews = @shoes.reviews.order(created_at: :desc).page params[:page]
+    @shoe = Shoe.find(params[:id])
+    @shoe_stores = @shoe.shoe_stores
+    # binding.pry
+    @reviews = @shoe.reviews.order(created_at: :desc).page params[:page]
   end
 
 
