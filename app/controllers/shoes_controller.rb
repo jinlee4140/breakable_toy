@@ -7,7 +7,7 @@ class ShoesController < ApplicationController
 
   def index
     if params[:search].present?
-      @shoes = Shoe.search(params[:search]).page(params[:page]).per(10)
+      @shoes = Shoe.search(params[:search]).page(params[:page]).per(15)
     else
       @shoes = Shoe.all.order(:name).page(params[:page]).per(15)
     end
@@ -48,7 +48,7 @@ class ShoesController < ApplicationController
   protected
 
   def shoes_params
-    params.require(:shoe).permit(:name, :price, :color, :brand, :image, :description)
+    params.require(:shoe).permit(:name, :price, :color, :brand, :image, :description, :feature)
   end
   
 end

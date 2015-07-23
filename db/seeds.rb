@@ -16,7 +16,7 @@ end
 
 
 shoes = [
-  ["Under Armour Men's Stephen Curry Low Basketball Shoes", "109.99", "Navy / Yellow", "Under Armour", "app/assets/images/seed1.jpg", "Stay flexible and quick on your feet in the new low-top version of the Under Armour® Curry Charged Foam basketball shoes. Thanks to the low-cut ankle design, the Curry 1 allows for a full range of motion. A Charged Foam midsole adapts with each move - soft and flexible during slow motion, but firm and responsive during fast movements. An ideal game shoe for summer games, the Curry low keeps you cool and comfortable when the action heats up."],
+  ["Under Armour Men's Stephen Curry Low Basketball Shoes", "109.99", "Navy / Yellow", "Under Armour", "app/assets/images/seed1.jpg", "Stay flexible and quick on your feet in the new low-top version of the Under Armour® Curry Charged Foam basketball shoes. Thanks to the low-cut ankle design, the Curry 1 allows for a full range of motion. A Charged Foam midsole adapts with each move - soft and flexible during slow motion, but firm and responsive during fast movements. An ideal game shoe for summer games, the Curry low keeps you cool and comfortable when the action heats up.", "a,b,c,d,e,f,g"],
   ["Under Armour Men's Stephen Curry Low Basketball Shoes", "109.99", "Turquoise / Black", "Under Armour", "app/assets/images/seed2.jpg", "Stay flexible and quick on your feet in the new low-top version of the Under Armour® Curry Charged Foam basketball shoes. Thanks to the low-cut ankle design, the Curry 1 allows for a full range of motion. A Charged Foam midsole adapts with each move - soft and flexible during slow motion, but firm and responsive during fast movements. An ideal game shoe for summer games, the Curry low keeps you cool and comfortable when the action heats up."],
   ["Jordan Men's Air Jordan 5 Retro Basketball Shoes", "189.99", "White / Green", "Air Jordan", "app/assets/images/seed3.jpg", ""],
   ["Nick Men's Kyrie 1 Basketball Shoes", "109.99", "Blue / Crimson / White", "Nike", "app/assets/images/seed4.jpg", "If you're quick on your feet like Irving, the Nike® Kyrie 1 basketball shoe is perfect for your game. Combining lightweight, zonal support with responsive cushioning, this on-court shoe is built for forward motion. Hyperfuse construction is durable yet breathable, offering the perfect design for support and stability. Lightweight foam throughout the midsole provides comfortable cushioning, while the unique outsole pattern enhances traction."],
@@ -46,37 +46,61 @@ shoes = [
   ["Nike Men's Zoom HyperRev 2015 Basketball Shoes", "89.99", "White / Black", "Nike", "app/assets/images/seed28.jpg", "Get equipped for championship performance with the Nike® Zoom HyperRev 2015 basketball shoe. Delivering optimal stability, this on-court shoe features a lightweight outer shell that provides zonal support and durability. A breathable inner bootie maximizes airflow while providing a close, comfortable fit. Hyperfuse construction increases lockdown support, while the thick rubber outsole features a herringbone pattern for improved traction."],
   ["Nike Men's Air Visi Pro V NBK Basketball Shoes", "69.99", "Black / Anthracite", "Nike", "app/assets/images/seed29.jpg", "Get the edge over your opponent when you wear the Nike® Air Visi Pro V basketball shoe. The upper features Nubuck and synthetic leather for support with a premium look, offering exceptional style and comfort. Cruise down the court while the Air units in the heel absorb impact and outriggers enhance stability. The outsole includes a modified herringbone traction pattern for durability and traction during explosive plays."],
   ["Nike Men's Zoom LeBron Soldier VIII Basketball Shoes", "109.99", "Red / Black", "Nike", "app/assets/images/seed30.jpg", "Stand up to any on-court challenge with the Nike® Zoom Soldier VIII basketball shoe. Key updates include a new zipper closure under the midfoot strap, locking your foot into place to reduce slipping and improve stability. The Soldier 8 has exceptional protection and responsiveness specifically crafted for the versatile player. A decoupled forefoot and heel allow a natural foot flex, while a power-flex traction pattern grips the court below."],
-  ["Nike Men's Kobe X Basketball Shoes", "174.99", "Grey / Silver", "Nike", "app/assets/images/seed22.jpg", "Change the game when you step out in the Nike® Kobe X basketball shoe. Incorporating unique elements from past models, the X makes a breakthrough with new technology. Responsive Lunarlon foam with flex grooves enhances natural motion, while a visible 180-degree Zoom Air unit in the heel increases responsiveness. An updated, transparent design symbolizes Kobe's life and sophisticated game, making this the perfect shoe to respect his style."]
+  ["Nike Men's Kobe X Basketball Shoes", "174.99", "Grey / Silver", "Nike", "app/assets/images/seed22.jpg", "Change the game when you step out in the Nike® Kobe X basketball shoe. Incorporating unique elements from past models, the X makes a breakthrough with new technology. Responsive Lunarlon foam with flex grooves enhances natural motion, while a visible 180-degree Zoom Air unit in the heel increases responsiveness. An updated, transparent design symbolizes Kobe's life and sophisticated game, making this the perfect shoe to respect his style."], 
+["2015 Crazylight Boost Primeknit Shoes", "130.00", "Color Vivid Red", "Adidas", "app/assets/images/steph1.jpg", "Getting to the rim with quickness or pulling up threes, these men's basketball shoes move from end to end with untouchable speed. They have boost™ in the midsole that energizes every step and feature a seamless adidas Primeknit upper and a supportive heel."],
+["2015 Crazylight Boost Primeknit Shoes", "130.00", "Color Solar Yellow", "Adidas", "app/assets/images/steph1.jpg", "Getting to the rim with quickness or pulling up threes, these men's basketball shoes move from end to end with untouchable speed. They have boost™ in the midsole that energizes every step and feature a seamless adidas Primeknit upper and a supportive heel."],
+["2015 Crazylight Boost Primeknit Shoes", "130.00", "Color Bright Cyan", "Adidas", "app/assets/images/steph1.jpg", "Getting to the rim with quickness or pulling up threes, these men's basketball shoes move from end to end with untouchable speed. They have boost™ in the midsole that energizes every step and feature a seamless adidas Primeknit upper and a supportive heel."],
+["2015 Crazylight Boost Primeknit Shoes", "130.00", "Color Running White Ftw / Running White Ftw / Clear Grey", "Adidas", "app/assets/images/steph1.jpg", "Getting to the rim with quickness or pulling up threes, these men's basketball shoes move from end to end with untouchable speed. They have boost™ in the midsole that energizes every step and feature a seamless adidas Primeknit upper and a supportive heel."],
+["2015 Crazylight Boost Primeknit Shoes", "130.00", "Color Core Black / Core Black / Clear Grey", "Adidas", "app/assets/images/steph1.jpg", "Getting to the rim with quickness or pulling up threes, these men's basketball shoes move from end to end with untouchable speed. They have boost™ in the midsole that energizes every step and feature a seamless adidas Primeknit upper and a supportive heel."],
+["2015 Crazylight Boost Primeknit Shoes", "130.00", "Color Running White Ftw / Running White Ftw / Collegiate Royal", "Adidas", "app/assets/images/steph1.jpg", "Getting to the rim with quickness or pulling up threes, these men's basketball shoes move from end to end with untouchable speed. They have boost™ in the midsole that energizes every step and feature a seamless adidas Primeknit upper and a supportive heel."],
+["Top Ten 2000", "125.00", "Color Power Red / Gold Metallic / Grey", "Adidas", "app/assets/images/steph1.jpg", "adidas Top Ten 2000 , new to site, more details coming soon."],
+["T-Mac1", "125.00", "Color multi", "Adidas", "app/assets/images/steph1.jpg", "adidas TMAC 1 , new to site, more details coming soon."],
+["Real deal", "125.00", "Color Scarlet / Iron Metallic / Bold Onix", "Adidas", "app/assets/images/steph1.jpg"],
+["D Lillard Shoes", "105.00", "Color Frozen Blue / Scarlet / Blue", "Adidas", "app/assets/images/steph1.jpg", "Late-game heroics, offensive explosions and clutch plays are just a few of the tricks that Dame pulls when he's running the floor. These men's basketball shoes are his signature pair. They have a synthetic and textile upper with a lace loop for a lockdown fit, and feature ADIPRENE®+ in the forefoot for launch and SPRINTFRAME stability."],
+["J Wall 1 Shoes", "115.00", "Color Collegiate Navy", "Adidas", "app/assets/images/steph1.jpg", "A star's on the rise in the capital, and these men's mid-cut basketball shoes mark his ascension. The seamless upper, full-length ADIPRENE® midsole and stabilizing FITFRAME put the function in Wall's signature kicks."],
+["J Wall 1 Shoes", "115.00", "Color Core Black", "Adidas", "app/assets/images/steph1.jpg", "A star's on the rise in the capital, and these men's mid-cut basketball shoes mark his ascension. The seamless upper, full-length ADIPRENE® midsole and stabilizing FITFRAME put the function in Wall's signature kicks."],
+["J Wall 1 Shoes", "115.00", "Color Light Onix / Core Black / Running White Ftw", "Adidas", "app/assets/images/steph1.jpg", "A star's on the rise in the capital, and these men's mid-cut basketball shoes mark his ascension. The seamless upper, full-length ADIPRENE® midsole and stabilizing FITFRAME put the function in Wall's signature kicks."],
+["J Wall 1 Shoes", "115.00", "Color Core Black / Light Scarlet / Running White", "Adidas", "app/assets/images/steph1.jpg", "A star's on the rise in the capital, and these men's mid-cut basketball shoes mark his ascension. The seamless upper, full-length ADIPRENE® midsole and stabilizing FITFRAME put the function in Wall's signature kicks."],
+["D Rose 5 Boost Shoes", "140.00", "Color Core Onix", "Adidas", "app/assets/images/steph1.jpg", "Derrick Rose can put points on the board in the least likely situations. These men's basketball shoes are designed to assist his highflying, defense-breaking, shot-sinking style. This playoff edition comes in an athletic gray that pays tribute to the hundreds of hours D-Rose logs in his training sweats, prepping for the next season. They have boost™ in the midsole, an innovative material that returns energy to every step for quick moves."],
+["D Rose 5 Boost Shoes", "140.00", "Color Silver Metallic", "Adidas", "app/assets/images/steph1.jpg", "Derrick Rose can put points on the board in the least likely situations. These men's basketball shoes are designed to assist his highflying, defense-breaking, shot-sinking style. This playoff edition comes in an athletic gray that pays tribute to the hundreds of hours D-Rose logs in his training sweats, prepping for the next season. They have boost™ in the midsole, an innovative material that returns energy to every step for quick moves."],
+["D Rose 5 Boost Shoes", "140.00", "Color Core Black", "Adidas", "app/assets/images/steph1.jpg", "Derrick Rose can put points on the board in the least likely situations. These men's basketball shoes are designed to assist his highflying, defense-breaking, shot-sinking style. This playoff edition comes in an athletic gray that pays tribute to the hundreds of hours D-Rose logs in his training sweats, prepping for the next season. They have boost™ in the midsole, an innovative material that returns energy to every step for quick moves."],
+["D Rose 5 Boost Shoes", "140.00", "Color Black Red", "Adidas", "app/assets/images/steph1.jpg", "Derrick Rose can put points on the board in the least likely situations. These men's basketball shoes are designed to assist his highflying, defense-breaking, shot-sinking style. This playoff edition comes in an athletic gray that pays tribute to the hundreds of hours D-Rose logs in his training sweats, prepping for the next season. They have boost™ in the midsole, an innovative material that returns energy to every step for quick moves."],
+["D Rose 5 Boost BMH Shoes", "140.00", "Color Cardboard", "Adidas", "app/assets/images/steph1.jpg", "Derrick Rose can put points on the board in the least likely situations. These men's basketball shoes are designed to assist his highflying, defense-breaking, shot-sinking style. This playoff edition comes in an athletic gray that pays tribute to the hundreds of hours D-Rose logs in his training sweats, prepping for the next season. They have boost™ in the midsole, an innovative material that returns energy to every step for quick moves."],
+["Crazy 8 shoes", "110.00", "Color Base Green / Base Green / Bold Orange", "Adidas", "app/assets/images/steph1.jpg", "The Crazy 8 has always dominated the floor, and these men's basketball shoes move inside and outside the paint with the same signature quickness. They have a durable upper and feature midfoot support and lightweight EVA cushioning."],
+["D Rose lakeshore mid shoes", "90.00", "Color Running White Ftw / Lone Blue / Running White", "Adidas", "app/assets/images/steph1.jpg", "These mid-top men's basketball shoes mix retro design with a little South Side pride, extending D-Rose's signature style off the court. With a leather upper and lightweight cushioning over a rubber outsole patterned after a map of Chicago neighborhoods."],
+["D Rose lakeshore mid shoes", "90.00", "Color Core Black / Light Scarlet / Light Red", "Adidas", "app/assets/images/steph1.jpg", "These mid-top men's basketball shoes mix retro design with a little South Side pride, extending D-Rose's signature style off the court. With a leather upper and lightweight cushioning over a rubber outsole patterned after a map of Chicago neighborhoods."]
+
 ]
 
 shoes.each do |array|
-  Shoe.create(name: array[0], price: array[1], color: array[2], brand: array[3], image: File.new(array[4]), description: array[5])
+  Shoe.create(name: array[0], price: array[1], color: array[2], brand: array[3], image: File.new(array[4]), description: array[5], feature: array[6])
 end
 
-stores = [
-  "Foot Locker", 
-  "Amazon",
-  "Nike",
-  "Adidas",
-  "Puma",
-  "Cole Haan",
-  "Reebok",
-  "Under Armour"
+stores =[
+ ["Foot Locker", "http://www.footlocker.com"],
+  ["Amazon", "http://www.amazon.com"],
+  ["Nike", "http://www.nike.com"],
+  ["Adidas", "http://www.adidas.com"],
+  ["Puma", "http://www.puma.com"],
+  ["Cole Haan", "http://www.coldhaan.com"],
+  ["Reebok", "http://www.reebok.com"],
+  ["Under Armour", "http://www.underarmour.com"]
 ]
+
 
 stores.each do |store|
   Store.create!(
-    store_name: store
+    store_name: store[0],
+     url: store[1]
   )
 end
 
 
 
 
-50.times do
+100.times do
   ShoeStore.create!(
     shoe: Shoe.all.sample,
-    store: Store.all.sample,
-    url: "http://www.danelsonrosa.com"
+    store: Store.all.sample
   )
 end

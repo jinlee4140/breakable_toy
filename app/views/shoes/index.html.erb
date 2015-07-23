@@ -20,7 +20,7 @@
         <% @shoes.each do |shoe| %>
           <%= link_to shoe.name, shoe %><br>
         <% end %>
-      <%= paginate @shoes %>
+      <%= paginate @shoes%>
     </div>
   </div>
   <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>

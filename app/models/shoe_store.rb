@@ -6,7 +6,6 @@ class ShoeStore < ActiveRecord::Base
 
  validates :store_id, presence: true
  validates :shoe_id, presence: true
- validates :url, presence: true
 
 
 end

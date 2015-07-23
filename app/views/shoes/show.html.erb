@@ -14,12 +14,13 @@
     </div>
     <p> <%= @shoe.description %> </p>
     <h3> Features </h2>
-    <li> Bootstrap 3 </li>
-    <li> Fully responsive </li>
-    <li> One page scroll design </li>
-    <li> HTML5 and CSS3 </li>
-    <li> Font Awesome Icons </li>
-    <li> Google Web Fonts </li>
+    <ul>
+    <% if @shoe.feature? %>
+    <% @shoe.feature.split(',').each do |feature| %>
+    <li><%= feature %></li>
+    <% end %>
+    <% end %>
+    </ul>
   </div>
   <div class="col-sm-4">
     <div class="thumbnail bg-grey text-center">
@@ -27,7 +28,7 @@
       <h3> $<%= @shoe.price %> </h3>
       <% @shoe.shoe_stores.each do |shoe_store| %>
         <%= shoe_store.store.store_name %>
-        <%= link_to "Buy Now", shoe_store.url %>
+        <%= link_to "Go to this store", shoe_store.store.url %>
         <br>
       <% end %>
     <!--   <a href="#" class="btn btn-success" role="button"> Buy Now </a> -->
@@ -64,7 +65,7 @@
           </tr>
           <tr>
             <td> Tags </td>
-            <td> Portfolio, responsive, clean, showcase, single page 
+            <td> Adidas, Under Armour, Nike, Puma, Reebok, Foot Locker 
             </td>
           </tr>
         </tbody>

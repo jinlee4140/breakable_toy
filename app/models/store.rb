@@ -5,4 +5,5 @@ class Store < ActiveRecord::Base
 
 
   validates :store_name, presence: true
+  validates :url, presence: true
 end
