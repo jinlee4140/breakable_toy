@@ -60,5 +60,6 @@ gem "font-awesome-rails"
 gem "chartkick"
 gem 'groupdate'
 gem 'omniauth-facebook'
+gem 'protected_attributes'
 # gem 'will_paginate-bootstrap'
 # gem 'bootstrap-will_paginate'

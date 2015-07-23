@@ -26,7 +26,7 @@ class StoresController < ApplicationController
  
     end
 
-
+    
 
   protected
 
