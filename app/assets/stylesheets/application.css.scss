@@ -3,10 +3,9 @@
 @import "font-awesome";
 body {
   background-image: url("bgimage13");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-color: #cccccc;
-    padding-top: 70px;
+  background-size: cover;
+  background-color: #cccccc;
+  padding-top: 70px;
 }
 
 .well {
@@ -77,6 +76,11 @@ h3 {
     padding-left: 15px;
 }
 
+.hacked-footer {
+  position: absolute;
+  bottom: 0;
+}
+
 .hometitle {
   font-size: 20px;
   margin-bottom: 20px;
@@ -106,12 +110,12 @@ h3 {
 
 .input-mysize { width: 300px }
 
-#footer {
+footer {
   background: #2E2E2E;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 100%;
- 
+  text-align: center;
 
 }
 

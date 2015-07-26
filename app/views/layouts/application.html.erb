@@ -16,7 +16,17 @@
     <%= yield %>
   </section>
 
-  <%= render 'layouts/footer' %>
+ 
+  <% if params[:controller] == "homes" ||
+      params[:controller] == "users" && params[:action] == "index" ||
+  		params[:controller] == "shoes" && params[:action] == "show" ||
+  		params[:controller] == "shoes" && params[:action] == "index"
+  %>
+    <footer><%= render 'layouts/footer' %></footer>
+  <% else %>
+    <footer class="hacked-footer"><%= render 'layouts/footer' %></footer>
+  <% end %>
 </body>
+
 
 </html>
